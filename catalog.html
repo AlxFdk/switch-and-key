@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог Switch&Key: готові механічні клавіатури та комплектуючі з фільтрами за форм-фактором, кріпленням і типом перемикачів.">
+  <title>Каталог — Switch&Key</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main">Перейти до основного вмісту</a>
+  <header>
+    <div>
+      <a href="index.html"><img src="images/logo.svg" alt="Switch&amp;Key — на головну" width="190" height="36"></a>
+      <nav aria-label="Основна навігація">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a href="samples.html">Стенд семплів</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="cart.html">Кошик</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div>
+      <p>Каталог</p>
+      <h1>Готові клавіатури та комплектуючі</h1>
+      <p>Просунуті фільтри за форм-фактором, типом кріплення, наявністю хот-свапу та матеріалом корпусу.</p>
+
+      <div>
+        <aside aria-label="Фільтри каталогу">
+          <h2>Фільтри</h2>
+          <form action="catalog.html" method="get">
+            <fieldset>
+              <legend>Форм-фактор</legend>
+              <label><input type="checkbox" name="form" value="65"> 65%</label>
+              <label><input type="checkbox" name="form" value="75" checked> 75%</label>
+              <label><input type="checkbox" name="form" value="tkl"> TKL / 87 клавіш</label>
+              <label><input type="checkbox" name="form" value="100"> Повнорозмірна 100%</label>
+            </fieldset>
+            <fieldset>
+              <legend>Тип кріплення</legend>
+              <label><input type="checkbox" name="mount" value="gasket" checked> Gasket mount</label>
+              <label><input type="checkbox" name="mount" value="top"> Top mount</label>
+              <label><input type="checkbox" name="mount" value="bottom"> Bottom mount</label>
+              <label><input type="checkbox" name="mount" value="sandwich"> Sandwich</label>
+            </fieldset>
+            <fieldset>
+              <legend>Матеріал корпусу</legend>
+              <label><input type="checkbox" name="material" value="aluminium"> Алюміній</label>
+              <label><input type="checkbox" name="material" value="polycarbonate"> Полікарбонат</label>
+              <label><input type="checkbox" name="material" value="abs"> ABS</label>
+            </fieldset>
+            <fieldset>
+              <legend>Додатково</legend>
+              <label><input type="checkbox" name="hotswap" value="1"> Hot-swap</label>
+              <label><input type="checkbox" name="samples" value="1"> Є семпл тайпінгу</label>
+            </fieldset>
+            <button type="submit">Застосувати</button>
+            <button type="reset">Скинути</button>
+          </form>
+        </aside>
+
+        <section aria-labelledby="products-title">
+          <h2 id="products-title">Товари</h2>
+          <div>
+            <form action="catalog.html" method="get" role="search">
+              <label for="q">Пошук</label>
+              <input id="q" type="search" name="q" placeholder="Пошук: модель, перемикач...">
+            </form>
+            <label>Сортування
+              <select name="sort">
+                <option>Спочатку популярні</option>
+                <option>Від дешевих до дорогих</option>
+                <option>Від дорогих до дешевих</option>
+              </select>
+            </label>
+          </div>
+
+          <div>
+            <article>
+              <img src="images/aurora-75-pro.jpg" alt="Темно-сіра клавіатура Aurora 75 Pro з алюмінієвим корпусом і синьою клавішею" width="400" height="300" loading="lazy">
+              <div>
+                <p>Switch&amp;Key</p>
+                <h3><a href="product.html">Aurora 75 Pro — алюмінієвий корпус, gasket mount</a></h3>
+                <div><span>75%</span><span>Hot-swap</span><span>Gasket</span></div>
+                <div>
+                  <p>6 490 ₴</p>
+                  <a href="cart.html">У кошик</a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <img src="images/vantablack-tkl.jpg" alt="Клавіатура у світло-сірому корпусі з білими та бежевими кейкапами" width="400" height="300" loading="lazy">
+              <div>
+                <p>NovaByte</p>
+                <h3><a href="product.html">Vantablack TKL — top mount, 87 клавіш</a></h3>
+                <div><span>TKL</span><span>Hot-swap</span><span>Top mount</span></div>
+                <div>
+                  <p>5 290 ₴</p>
+                  <a href="cart.html">У кошик</a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <img src="images/milky-yellow.jpg" alt="Лінійні перемикачі Gateron Milky Yellow Pro з жовтими штоками" width="400" height="300" loading="lazy">
+              <div>
+                <p>Gateron</p>
+                <h3><a href="product.html">Milky Yellow Pro — лінійні перемикачі, 110 шт</a></h3>
+                <div><span>Лінійні</span><span>5-pin</span><span>Заводське змащення</span></div>
+                <div>
+                  <p>1 150 ₴</p>
+                  <a href="cart.html">У кошик</a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <img src="images/akko-lavender-purple.jpg" alt="Фіолетові перемикачі Akko CS Lavender Purple, розставлені рядами" width="400" height="300" loading="lazy">
+              <div>
+                <p>Akko</p>
+                <h3><a href="product.html">CS Lavender Purple — тактильні перемикачі, 45 шт</a></h3>
+                <div><span>Тактильні</span><span>45 gf</span></div>
+                <div>
+                  <p>690 ₴</p>
+                  <a href="cart.html">У кошик</a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <img src="images/pbt-keycaps.jpg" alt="Набір PBT кейкапів сірого та фіолетового кольорів" width="400" height="300" loading="lazy">
+              <div>
+                <p>KeyForge</p>
+                <h3><a href="product.html">PBT кейкапи Cherry profile, 135 клавіш</a></h3>
+                <div><span>PBT</span><span>Cherry</span></div>
+                <div>
+                  <p>1 480 ₴</p>
+                  <a href="cart.html">У кошик</a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <img src="images/foam-kit.jpg" alt="Шумоізоляційна піна, пензлик, мастило та інструменти для збірки клавіатури" width="400" height="300" loading="lazy">
+              <div>
+                <p>Switch&amp;Key</p>
+                <h3><a href="product.html">Набір шумоізоляції: піна, стрічка, плівка</a></h3>
+                <div><span>Шумоізоляція</span><span>75%</span></div>
+                <div>
+                  <p>450 ₴</p>
+                  <a href="cart.html">У кошик</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <div>
+        <section aria-labelledby="f-about">
+          <h2 id="f-about">SWITCH<span>&amp;</span>KEY</h2>
+          <p>Спеціалізований магазин механічних клавіатур, перемикачів та комплектуючих.</p>
+          <address>
+            Київ, вул. Кирилівська 41, шоурум<br>
+            <a href="tel:+380800332107">0 800 33 21 07</a><br>
+            <a href="mailto:hello@switchandkey.ua">hello@switchandkey.ua</a>
+          </address>
+        </section>
+        <nav aria-labelledby="f-catalog">
+          <h2 id="f-catalog">Магазин</h2>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="product.html">Картка товару</a></li>
+            <li><a href="samples.html">Стенд семплів</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="f-support">
+          <h2 id="f-support">Підтримка</h2>
+          <ul>
+            <li><a href="about.html#delivery">Доставка й оплата</a></li>
+            <li><a href="about.html#warranty">Гарантія та повернення</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="f-company">
+          <h2 id="f-company">Компанія</h2>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p>&copy; 2026 Switch&amp;Key. Усі права захищені.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

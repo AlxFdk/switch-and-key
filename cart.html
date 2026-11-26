@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Кошик та оформлення замовлення в магазині Switch&Key.">
+  <title>Кошик — Switch&Key</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main">Перейти до основного вмісту</a>
+  <header>
+    <div>
+      <a href="index.html"><img src="images/logo.svg" alt="Switch&amp;Key — на головну" width="190" height="36"></a>
+      <nav aria-label="Основна навігація">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="samples.html">Стенд семплів</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="cart.html" aria-current="page">Кошик</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div>
+      <p>Замовлення</p>
+      <h1>Кошик</h1>
+
+      <section aria-labelledby="steps-title">
+        <h2 id="steps-title">Як відбувається замовлення</h2>
+        <ol>
+          <li>Перевірте обрані товари та їх кількість.</li>
+          <li>Заповніть контактні дані та спосіб доставки.</li>
+          <li>Підтвердіть замовлення — менеджер зателефонує для уточнення.</li>
+          <li>Отримайте посилку протягом 1–2 днів.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="items-title">
+        <h2 id="items-title">Обрані товари</h2>
+        <div>
+          <table>
+            <thead>
+              <tr><th scope="col">Товар</th><th scope="col">Ціна</th><th scope="col">Кількість</th><th scope="col">Сума</th><th scope="col"><span>Дії</span></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="product.html">Aurora 75 Pro</a></td>
+                <td>6 490 ₴</td>
+                <td><input type="number" name="qty1" value="1" min="1" aria-label="Кількість Aurora 75 Pro"></td>
+                <td>6 490 ₴</td>
+                <td><button type="button">Видалити</button></td>
+              </tr>
+              <tr>
+                <td><a href="product.html">Gateron Milky Yellow Pro, 110 шт</a></td>
+                <td>1 150 ₴</td>
+                <td><input type="number" name="qty2" value="1" min="1" aria-label="Кількість Gateron Milky Yellow Pro"></td>
+                <td>1 150 ₴</td>
+                <td><button type="button">Видалити</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Разом: <strong>7 640 ₴</strong></p>
+      </section>
+
+      <section aria-labelledby="checkout-title">
+        <h2 id="checkout-title">Оформлення замовлення</h2>
+        <form action="cart.html" method="post">
+          <fieldset>
+            <legend>Контактні дані</legend>
+            <p>
+              <label for="order-name">Ім'я</label><br>
+              <input id="order-name" type="text" name="name" required minlength="2" autocomplete="name">
+            </p>
+            <p>
+              <label for="order-phone">Телефон</label><br>
+              <input id="order-phone" type="tel" name="phone" placeholder="+380XXXXXXXXX" required pattern="\+?380[0-9]{9}" title="Формат: +380XXXXXXXXX" autocomplete="tel">
+            </p>
+            <p>
+              <label for="order-email">Email (необов'язково)</label><br>
+              <input id="order-email" type="email" name="email" autocomplete="email">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Доставка</legend>
+            <p>
+              <label><input type="radio" name="delivery" value="nova-poshta" checked> Нова пошта</label><br>
+              <label><input type="radio" name="delivery" value="pickup"> Самовивіз із шоуруму (Київ, вул. Кирилівська 41)</label>
+            </p>
+            <p>
+              <label for="order-city">Місто</label><br>
+              <input id="order-city" type="text" name="city" required autocomplete="address-level2">
+            </p>
+            <p>
+              <label for="order-branch">Відділення Нової пошти</label><br>
+              <input id="order-branch" type="text" name="branch">
+            </p>
+          </fieldset>
+
+          <p>
+            <label for="order-comment">Коментар до замовлення</label><br>
+            <textarea id="order-comment" name="comment" rows="3" cols="40" maxlength="500"></textarea>
+          </p>
+          <p>
+            <label><input type="checkbox" name="consent" required> Погоджуюсь на обробку персональних даних</label>
+          </p>
+          <p><button type="submit">Підтвердити замовлення</button></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <div>
+        <section aria-labelledby="f-about">
+          <h2 id="f-about">SWITCH<span>&amp;</span>KEY</h2>
+          <p>Спеціалізований магазин механічних клавіатур, перемикачів та комплектуючих.</p>
+          <address>
+            Київ, вул. Кирилівська 41, шоурум<br>
+            <a href="tel:+380800332107">0 800 33 21 07</a><br>
+            <a href="mailto:hello@switchandkey.ua">hello@switchandkey.ua</a>
+          </address>
+        </section>
+        <nav aria-labelledby="f-catalog">
+          <h2 id="f-catalog">Магазин</h2>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="product.html">Картка товару</a></li>
+            <li><a href="samples.html">Стенд семплів</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="f-support">
+          <h2 id="f-support">Підтримка</h2>
+          <ul>
+            <li><a href="about.html#delivery">Доставка й оплата</a></li>
+            <li><a href="about.html#warranty">Гарантія та повернення</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="f-company">
+          <h2 id="f-company">Компанія</h2>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p>&copy; 2026 Switch&amp;Key. Усі права захищені.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
